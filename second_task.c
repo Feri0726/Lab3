@@ -8,7 +8,23 @@ Hint: Sum of divisors implies applying summation: a loop, and summing in the acc
 #include <stdio.h>
 
 int main(){
+    int szam;
+    int ossz;
+    printf("Give a number want");
+    scanf("%d", &szam);
+    for (int i = 1; i < szam; i++){
+        if (szam % i == 0){
+            ossz = ossz + i;
+        }
 
-
+    }
+    printf("%d\n", ossz);
+    if (szam == ossz){
+        printf("Perfecto numbero\n");
+    }
+    else{
+        printf("Non perfecto numbero\n");
+    }
+    return 0;
 
 }
