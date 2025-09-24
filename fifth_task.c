@@ -15,6 +15,16 @@ Hence, 1/3, in C, gives 0. However, 1.0/3 gives 0.333333 that is the correct val
 #include <stdio.h>
 
 int main(){
-
-return 0;
+    int n;
+    printf("accuracy?");
+    scanf("%d", &n);
+    double pi = 0.0;
+    for (int i = 1; i <= n*2; i += 4){
+        pi = pi + (1.0/i);
+    }
+    for (int i = 3; i <= n*2; i += 4){
+        pi = pi - (1.0/i);
+    }
+    printf("pi with %d accuracy: %f", n, pi*4.0);
+    return 0;
 }
