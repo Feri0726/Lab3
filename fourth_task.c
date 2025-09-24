@@ -15,10 +15,10 @@ int main(){
     int n;
     printf("lenght");
     scanf("%d", &n);
-    for (int i = 2; i <= n; i += 2){
+    for (int i = 2; i <= n*2; i += 2){
         pi = pi * (1.0*(i*i)/((i-1)*(i+1)));
     }
-    printf("pi value being: %f", pi*2);
+    printf("pi value being: %f with accuracy of %d", pi*2, n);
 
     return 0;
 }
