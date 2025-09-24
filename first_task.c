@@ -15,7 +15,14 @@ Print the pruduct.*/
 #include<stdio.h>
 
 int main(){
-
-
+    int prod = 1;
+    int n = 10;
+    while (n >= 2){
+        prod = prod * n;
+        n--;
+        printf("%d\n", prod);
+    }
+    printf("The product is: %d\n", prod);
+    return 0;
 
 }
