@@ -11,10 +11,21 @@ Write a program to compute it with the first 20 terms! Note that the factorial c
 Hint: if you have used nested loops, try to simplify your solution! A single loop is enough to solve the problem.*/
 
 #include<stdio.h>
+int fakt(int n){
+    int szorz = 1;
+    for (int i = 1; i <= n; i++){
+        szorz = szorz * i;
+    }
+    return szorz;
+}
 
 int main()
 {
-
-
+    double e = 0.0;
+    for (int i = 0; i < 20; i++){
+        e = e + (1.0/(fakt(i)));
+    }
+    printf("e: %f\n", e);
+    return 0;
 
 }
