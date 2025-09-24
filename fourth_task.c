@@ -11,7 +11,14 @@ Identify the repeating pattern in the formula, and write a program to evaluate i
 #include<stdio.h>
 
 int main(){
+    double pi = 1.0;
+    int n;
+    printf("lenght");
+    scanf("%d", &n);
+    for (int i = 2; i <= n; i += 2){
+        pi = pi * (1.0*(i*i)/((i-1)*(i+1)));
+    }
+    printf("pi value being: %f", pi*2);
 
-
-return 0;
+    return 0;
 }
